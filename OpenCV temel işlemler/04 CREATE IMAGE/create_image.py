@@ -39,6 +39,7 @@ black = (0, 0, 0)
 red = (0, 0, 255)
 green = (0, 255, 0)
 
+
 cv.rectangle(img, (480,250), (100,450), black, 8)
 cv.rectangle(img, (580,150), (200,350), black, 8)
 cv.line(img, (100,450), (200,350), black, 8)
@@ -51,7 +52,8 @@ font_thickness = 2
 font_size = 1
 font = cv.FONT_HERSHEY_DUPLEX
 
-cv.putText(img, 'www.harikaresimcizerim.com', start_point, font, font_size, green, font_thickness)
+#cv.putText(img, 'www.harikaresimcizerim.com', start_point, font, font_size, green, font_thickness)
+#font bilgisyarda olmadığı için hata veriyor
 cv.imshow('dikdortgen', img)
 cv.waitKey(0)
 cv.destroyAllWindows(0)
